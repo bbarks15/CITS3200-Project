@@ -1,0 +1,22 @@
+[Unit]
+Description=uWSGI service unit
+After=syslog.target
+
+
+[Service]
+ExecStart=/usr/bin/uwsgi --ini /var/www/backend/uwsgi.ini
+User=www-data
+Group=www-data
+Restart=on-failure
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+RuntimeDirectory=uwsgi
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+

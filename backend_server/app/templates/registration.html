@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        #main {
+            background-color: white;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            color: #666769;
+        }
+
+        #main > p {
+            font-size: large;
+            text-align: center;
+        }
+
+        #main > h1 {
+            font-size: 3em;
+            text-align: center;
+            font-weight: normal;
+        }
+        #results {
+            padding-bottom: 1%;
+        }
+
+        a:link, a:visited {
+            background-color: #0a71b4;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5%;
+            text-align: center;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            /* display:block; */
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+
+        #logo {
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img src="{url}/LogoFinal.png" alt="" id="logo">
+        <h1 id="hi">Register Account</h1>
+        <p id="results">Welcome to Xytovet.</p>
+        <p>The Xytovet Job Tracker will allow you to track the progress of your samples as they are processed by Xytovet.</p>
+        <p>To complete your account registration click the following link:</p>
+        <div style="text-align: center;">
+            <a href="{{url}}" id="website_link">Register</a>
+        </div>
+    </div>
+</body>
+</html>
